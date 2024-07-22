@@ -1,10 +1,10 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+export default () => {
   return (
-    <Html lang="en">
+    <Html lang="en" data-id="AppRoot" data-testid="AppRoot" className="theme-color-font">
       <Head />
-      <body>
+      <body className="fixed inset-0 z-[1]">
         <Main />
         <NextScript />
       </body>
